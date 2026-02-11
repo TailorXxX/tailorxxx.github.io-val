@@ -1,0 +1,72 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #030303;
+    background-color:pink;
+    background-image: url(./assets/poza1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-size: 78px;
+    margin-bottom: 20px;
+    color: #a300fe
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+button {
+    font-size: 24px;
+    background: #a300fe !important;
+    color: pink;
+    padding: 10px 20px;
+    border: none;
+}
+button:hover {
+    background: #a300fe !important;
+    transform: scale(1.1);
+}
+img {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+img.show {
+    display: block;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
